@@ -1,10 +1,14 @@
 @import "tailwindcss";
+html {
+    scroll-behavior: smooth;
+}
 body{
     font-family: "Fira Code", monospace;
     background-color: #002d3d;
     color: #48ff00;
     padding: 20px;
     text-align: center;
+
 
     
 }
