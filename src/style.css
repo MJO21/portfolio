@@ -1,9 +1,23 @@
+@import "tailwindcss";
 body{
     font-family: sans-serif;
     background-color: #002d3d;
     color: #48ff00;
+    padding: 20px;
+
+    
 }
 img{
     width: 30%;
     height: 30%;
+    border-radius: 20px;
+    padding: 10px;
+}
+h1{
+    color: #2a830b;
+    padding: 20px;
+    text-align: center;
+}
+p{
+    padding: 20px;
 }
