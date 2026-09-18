@@ -14,12 +14,6 @@ img{
     padding: 10px;
 
     animation: var(--animate-spin); /* spin 1s linear infinite */
-
-    @keyframes spin {
-        to {
-            transform: rotate(360deg);
-        }
-    }
 }
 h1{
     color: #2a830b;
@@ -28,4 +22,9 @@ h1{
 }
 p{
     padding: 20px;
+}
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
 }
