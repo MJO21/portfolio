@@ -9,10 +9,12 @@ body{
     
 }
 #schnaps {
-    width: 30%;
-    height: 30%;
+    width: auto;
+    height: auto;
+    max-height: 50%;
+    max-width: 50%;
     border-radius: 20px;
-    padding: 50px;
+    padding: 20px;
 
     animation: spin 2s linear infinite;
 }
