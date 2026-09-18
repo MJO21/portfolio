@@ -1,24 +1,26 @@
 @import "tailwindcss";
 body{
-    font-family: sans-serif;
+    font-family: "Fira Code", monospace;
     background-color: #002d3d;
     color: #48ff00;
     padding: 20px;
 
     
 }
-img{
+img {
     width: 30%;
     height: 30%;
     border-radius: 20px;
-    padding: 10px;
+    padding: 100px;
 
-    animation: var(--animate-spin); /* spin 1s linear infinite */
+    animation: spin 2s linear infinite;
 }
 h1{
     color: #2a830b;
     padding: 20px;
     text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
 }
 p{
     padding: 20px;
