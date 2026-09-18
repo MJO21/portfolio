@@ -9,27 +9,38 @@
   </head>
   <body>
   <nav class="flex justify-center space-x-4">
-    <a href="/dashboard" class="font-medium rounded-lg px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">
+    <!--<a href="/dashboard" class="font-medium rounded-lg px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">
       Home
     </a>
     <a href="/team" class="font-medium rounded-lg px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">
       Team
-    </a>
+    </a>-->
     <a href="#projects-section" class="font-medium rounded-lg px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">
       Projects
     </a>
-    <a href="/reports" class="font-medium rounded-lg px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">
+    <!--<a href="/reports" class="font-medium rounded-lg px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">
       Reports
-    </a>
+    </a>-->
   </nav>
   <h1>
     Das ist die Bar von Johannes
   </h1>
     <p>Die Bar ist aktuell wegen versorgungs Problemen geschlossen</p>
-    <img src="/schnaps.jpg" alt="bild vom schnaps">
+    <img id="schnaps" src="/schnaps.jpg" alt="bild vom schnaps">
 
   <div id="projects-section">
-      <h2>Projects</h2>
+      <h2 id="projects-headline">Projects</h2>
+    <div class="card bg-base-100 w-96 shadow-sm">
+      <div class="card-body">
+        <h2 class="card-title">Drone FW</h2>
+        <p>Currently developing a custom flight controller from scratch on STM32 microcontrollers using bare-metal C++</p>
+      </div>
+      <figure>
+        <img
+                src="/drone.jpg"
+                alt="drone" />
+      </figure>
+    </div>
   </div>
   </body>
 </html>

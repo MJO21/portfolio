@@ -4,10 +4,11 @@ body{
     background-color: #002d3d;
     color: #48ff00;
     padding: 20px;
+    text-align: center;
 
     
 }
-img {
+#schnaps {
     width: 30%;
     height: 30%;
     border-radius: 20px;
@@ -16,14 +17,30 @@ img {
     animation: spin 2s linear infinite;
 }
 h1{
-    color: #2a830b;
+    color: #279c00;
     padding: 20px;
     text-align: center;
     font-weight: bold;
     text-decoration: underline;
+    font-size:  40px;
+}
+.card-title{
+    padding-top: 20px;
+    font-size:  30px;
+    text-align: center;
+    color: #279c00;
+}
+#projects-headline{
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
 }
 p{
     padding: 20px;
+}
+.card-body{
+    background-color: slategrey;
+
 }
 @keyframes spin {
     to {
