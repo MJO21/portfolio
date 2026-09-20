@@ -17,7 +17,7 @@ body{
     height: auto;
     max-height: 50%;
     max-width: 50%;
-    border-radius: 20px;
+    border-radius: 50px;
     padding: 20px;
 
     animation: spin 2s linear infinite;
@@ -48,6 +48,23 @@ p{
     background-color: slategrey;
 
 }
+
+#drone-container {
+    width: 400px;   /* Gewünschte Breite des Widgets */
+    height: 300px;  /* Gewünschte Höhe des Widgets */
+    position: relative;
+    overflow: hidden; /* Schneidet alles ab, was über den Rand ragt */
+    border-radius: 8px;
+
+}
+
+#bg {
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+    border-radius: 10px;
+}
+
 @keyframes spin {
     to {
         transform: rotate(360deg);
