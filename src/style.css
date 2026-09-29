@@ -9,19 +9,8 @@ body{
     padding: 20px;
     text-align: center;
 
-
-    
 }
-#schnaps {
-    width: auto;
-    height: auto;
-    max-height: 50%;
-    max-width: 50%;
-    border-radius: 50px;
-    padding: 20px;
 
-    animation: spin 2s linear infinite;
-}
 h1{
     color: #279c00;
     padding: 20px;
