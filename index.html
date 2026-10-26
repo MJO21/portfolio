@@ -1,51 +1,144 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/ich.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
-    <title>portfolio</title>
-  </head>
-  <body>
-  <nav class="flex justify-center space-x-4">
-    <!--<a href="/dashboard" class="font-medium rounded-lg px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">
-      Home
-    </a>
-    <a href="/team" class="font-medium rounded-lg px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">
-      Team
-    </a>-->
-    <a href="#projects-section" class="font-medium rounded-lg px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">
-      Projects
-    </a>
-    <a href="#3dArts" class="font-medium rounded-lg px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">
-      3d Arts
-    </a>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/ich.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Johannes – embedded hardware and software: bare-metal C++ flight controllers, STM32 and 3D art." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet" />
+  <title>Johannes – Portfolio</title>
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav" aria-label="Main">
+    <a href="#top" class="nav-brand">johannes</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects-section">Projects</a></li>
+      <li><a href="#3dArts">3D Arts</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
+</header>
 
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <p class="prompt">&gt; whoami</p>
+    <h1>hi, johannes here<span class="cursor" aria-hidden="true">_</span></h1>
+    <p class="hero-sub">
+      I work where hardware meets software: embedded firmware, electronics design and 3D modeling.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#projects-section">See my projects</a>
+      <a class="btn" href="#contact">Say hi!</a>
+    </div>
+  </section>
 
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2 class="section-title">About</h2>
+    <div class="about">
+      <p>
+        I like understanding how things work all the way down, from the
+        schematic to the firmware. My focus is embedded hardware combined
+        with software: bare-metal C++ on STM32, real-time control and
+        wireless telemetry.
+      </p>
+      <ul class="tags" aria-label="Skills">
+        <li>C++</li>
+        <li>STM32</li>
+        <li>ARM</li>
+        <li>ESP32</li>
+        <li>Embedded Systems</li>
+        <li>Sensor Fusion</li>
+        <li>KiCad</li>
+        <li>FPV</li>
+        <li>3D Modeling</li>
+      </ul>
+    </div>
+  </section>
 
-  <div id="projects-section">
-      <h2 id="projects-headline">Projects</h2>
-    <div class="card bg-base-100 w-96 shadow-sm">
-      <div class="card-body">
-        <h2 class="card-title">Drone FW</h2>
-        <p>Building a bare-metal C++ FPV flight controller from scratch on STM32 for real-time sensor fusion and motor control—currently expanding with decentralized peer-to-peer telemetry for multi-drone swarm intelligence.</p>
-      </div>
-      <figure>
-        <img
-                src="/drone2.jpg"
-                alt="drone" />
+  <!-- PROJECTS -->
+  <section id="projects-section" class="section">
+    <h2 id="projects-headline" class="section-title">Projects</h2>
+    <div class="cards">
+      <article class="card">
+        <figure class="card-media">
+          <img src="/drone2.jpg" alt="FPV drone with the custom flight controller" loading="lazy" />
+        </figure>
+        <div class="card-body">
+          <h3 class="card-title">Drone FW</h3>
+          <p>
+            A bare-metal C++ FPV flight controller built from scratch on STM32,
+            with real-time sensor fusion and motor control. Currently expanding
+            it with decentralized peer-to-peer telemetry for multi-drone swarm
+            intelligence.
+          </p>
+          <ul class="tags">
+            <li>C++</li>
+            <li>STM32</li>
+            <li>Real-time</li>
+            <li>Telemetry</li>
+          </ul>
+          <!-- <a class="card-link" href="https://github.com/...">View on GitHub</a> -->
+        </div>
+      </article>
+
+      <!-- Weitere Projekte: Karte kopieren, Bild/Text/Tags ändern
+      <article class="card">
+        <figure class="card-media"><img src="/projekt.jpg" alt="" loading="lazy" /></figure>
+        <div class="card-body">
+          <h3 class="card-title">Projektname</h3>
+          <p>Kurzbeschreibung.</p>
+          <ul class="tags"><li>Tag</li></ul>
+        </div>
+      </article>
+      -->
+    </div>
+  </section>
+
+  <!-- 3D ARTS -->
+  <section id="3dArts" class="section">
+    <h2 class="section-title">3D Arts</h2>
+    <p class="section-intro">Drag to rotate the models.</p>
+    <div class="viewers">
+      <figure class="viewer-wrap">
+        <div class="viewer" data-model="/Drone.glb">
+          <canvas aria-label="3D model of a drone"></canvas>
+          <span class="viewer-status">Loading model…</span>
+        </div>
+        <figcaption>Drone</figcaption>
+      </figure>
+      <figure class="viewer-wrap">
+        <div class="viewer" data-model="/craz.glb">
+          <canvas aria-label="3D model craz"></canvas>
+          <span class="viewer-status">Loading model…</span>
+        </div>
+        <figcaption>Craz</figcaption>
       </figure>
     </div>
-  </div>
-  <div id="3dArts">
-    <h2 id="projects-headline">3D Arts</h2>
-    <div id="drone-container">
-      <canvas id="bg"></canvas>
-    </div>
-  </div>
+  </section>
 
-  <script type="module" src="/src/3dArt.js"></script>
-  </body>
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2 class="section-title">Contact</h2>
+    <p class="section-intro">Interested in working together or just want to talk ?</p>
+    <div class="hero-actions">
+
+      <a class="btn btn-primary" href="mailto:johannes.tanz05@gmail.com">Send an email</a>
+      <a class="btn" href="https://github.com/MJO21" target="_blank" rel="noopener">GitHub</a>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Johannes</p>
+</footer>
+
+<script type="module" src="/src/main.js"></script>
+</body>
 </html>
